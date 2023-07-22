@@ -1,13 +1,13 @@
 
-<h2 align="center"> PRINT FORMATTED(printf) </h2>
+<h2 align="center" style = "color: red;"> PRINT FORMATTED(printf) </h2>
 
 This repo is a project assigned to us as ALX students.
 
 ## Table of Contents 
 
 - [Defination](#Description)
-- [Usage and Syntax](#Usage and Syntax)
-- [Formatting Options](#Formatting Options)
+- [Usage and Syntax](#Usage-`and-Syntax)
+- [Formatting Options](#Formatting-Options)
 - [Commands](#commands)
 - [Tasks](#tasks)
 - [Installation](#installation)
