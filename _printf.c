@@ -40,9 +40,9 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 		{
-			value = integer_print(va_arg(list, int);
+			value = integer_print(va_arg(list, int));
 			i++;
-			lenght += value - 1;
+			lenght += (value - 1);
 		}
 	lenght++;
 	}
