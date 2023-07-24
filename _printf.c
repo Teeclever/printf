@@ -3,7 +3,6 @@
 /**
   *_printf - A printf function that takes in agument
   *@format: an argument that takes char
-  *
   *Return: A return value of a printed chars
   */
 
