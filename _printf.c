@@ -8,8 +8,10 @@
 
 int _printf(const char *format, ...)
 {
-	int i, x, value;
+	int i;
 	int lenght = 0;
+	int x;
+	int value;
 	va_list list;
 
 	va_start(list, format);
@@ -18,33 +20,31 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
-			lenght++;
 		}
 		else if (format[i + 1] == 'c')
 		{
 			_putchar(va_arg(list, int));
-			lenght++;
 			i++;
 		}
 
 		else if (format[i + 1] == 's')
 		{
 			x = string(va_arg(list, char *));
-			lenght += x;
 			i++;
+			lenght += (x - 1);
 		}
 		else if (format[i + 1] == '%')
 		{
 			_putchar('%');
-			lenght++;
 			i++;
 		}
 		else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 		{
 			value = integer_print(va_arg(list, int));
-			lenght++;
 			i++;
+			lenght += (value - 1);
 		}
+	lenght++;
 	}
 	va_end(list);
 	return (lenght);
