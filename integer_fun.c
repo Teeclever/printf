@@ -11,7 +11,7 @@ int integer_print(int value)
 	char buff[32];
 	int print = 0;
 	int i = 0;
-
+	int j;
 
 	if (value < 0)
 	{
@@ -25,7 +25,7 @@ int integer_print(int value)
 		print++;
 	} while (value > 0);
 
-	for (int j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(buff[j]);
 	}
