@@ -2,10 +2,10 @@
 
 
 /**
-   * _putchar - An entry that print a char
-    * @c: recive an integer value
-     * return : 1
-     */
+ * _putchar - An entry that print a char
+ * @c: recive an integer value
+ * Return : 1
+ */
 
 int _putchar(char c)
 {
@@ -14,9 +14,9 @@ int _putchar(char c)
 
 
 /**
-   * _puts - a progarm prints a string to stdout
-   * @str: pointer to the string to print
-  * Return: number of chars written
+ * _puts - a progarm prints a string to stdout
+ * @str: pointer to the string to print
+ * Return: number of chars written
  */
 
 int _puts(char *str)
