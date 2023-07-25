@@ -8,44 +8,32 @@
 
 int _printf(const char *format, ...)
 {
-	int i;
-	int lenght = 0;
-	int x;
-	int value;
-	va_list list;
+	int printed;
 
-	va_start(list, format);
-	for (i = 0; format[i] != '\0'; i++)
-	{
-		if (format[i] != '%')
-		{
-			_putchar(format[i]);
-		}
-		else if (format[i + 1] == 'c')
-		{
-			_putchar(va_arg(list, int));
-			i++;
-		}
+	covert functions[] = {
+		{"i", integer},
+		{"c", printchar},
+		{"s", stringchar},
+		{"%", percent},
+		{"d", integer},
+		{"u", print_unsigned_integer},
+		{"b", print_binary},
+		{"o", print_octal},
+		{"x", hexa},
+		{"X", print_HEX},
+		{"S", _String},
+		{"p", pointerhex},
+		{"r", print_rev},
+		{"R", print_rot13},
+		{NULL, NULL},
+	};
+	va_list args;
 
-		else if (format[i + 1] == 's')
-		{
-			x = string(va_arg(list, char *));
-			i++;
-			lenght += (x - 1);
-		}
-		else if (format[i + 1] == '%')
-		{
-			_putchar('%');
-			i++;
-		}
-		else if (format[i + 1] == 'd' || format[i + 1] == 'i')
-		{
-			value = integer_print(va_arg(list, int));
-			i++;
-			lenght += (value - 1);
-		}
-	lenght++;
-	}
-	va_end(list);
-	return (lenght);
+	if (format == NULL)
+		return (-1);
+
+	va_start(args, format);
+	printed = operate(format, functions, args);
+	va_end(args);
+	return (printed);
 }
