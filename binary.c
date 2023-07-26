@@ -90,7 +90,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 int hex_check(int num, char x)
 {
 	char *hex = "abcdef";
-	char *HEX = "ABCDEF";
+	char *Hex = "ABCDEF";
 
 	num = num - 10;
 	if (x == 'x')
