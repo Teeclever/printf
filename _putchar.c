@@ -4,7 +4,7 @@
 /**
  * _putchar - An entry that print a char
  * @c: recive an integer value
- * Return : 1
+ * Return: value 1
  */
 
 int _putchar(char c)

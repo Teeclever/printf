@@ -2,7 +2,7 @@
 
 
 /**
- * print_hex - Prints a representation of a decimal number on base16 lowercase
+ * hexa - Prints a representation of a decimal number on base16 lowercase
  * @list: List of the arguments passed to the function
  * Return: Number of characters printed
  */

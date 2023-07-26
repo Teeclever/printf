@@ -68,4 +68,3 @@ char *convert(unsigned long int num, int base, int lowercase)
 
 	return (ptr);
 }
-

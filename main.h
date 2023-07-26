@@ -13,8 +13,8 @@
 /**
  * struct params - A defines a structure for symbols and functions
  *
- * @stmr An operator
- * @point: A function
+ * @str: An operator
+ * @point: A function pointer
  */
 
 struct params
@@ -50,9 +50,7 @@ void base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int print_unsgined_number(unsigned int n);
 int hex_check(int num, char x);
-
-int isNonAlphaNumeric(char c); 
+int isNonAlphaNumeric(char c);
 int _puts(char *str);
 char *convert(unsigned long int num, int base, int lowercase);
 #endif
-
